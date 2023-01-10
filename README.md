@@ -1,1 +1,1 @@
-# lifecare-react-chart-sample
+# lifecare-vue-bi
