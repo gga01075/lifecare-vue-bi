@@ -1,18 +1,32 @@
 <template>
-	<Layout> </Layout>
+	<div>
+		<CHeader />
+		<CContainer>
+			<CSidebar />
+			<CContent>
+				<router-view></router-view>
+			</CContent>
+		</CContainer>
+	</div>
 </template>
 <script>
-import { Layout } from 'antd';
-import {} from '@ant-design/icons-vue';
+import CHeader from './CHeader.vue';
+import CContainer from './CContainer.vue';
+import CSidebar from './CSidebar.vue';
+import CContent from './CContent.vue';
 
 export default {
+	name: 'c-layout',
 	components: {
-		Layout,
+		CHeader,
+		CContainer,
+		CSidebar,
+		CContent,
 	},
-
 	data() {
 		return {};
 	},
 };
 </script>
-<style></style>
+
+<style lang="scss" scoped></style>
