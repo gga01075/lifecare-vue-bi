@@ -12,6 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .container-wrap {
+	display: flex;
 	height: calc(100vh - 100px);
 }
 </style>

@@ -12,9 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .content {
-	max-width: 1000px;
-	background: #ccc;
-	display: flex;
+	background: #eee;
 	flex-grow: 8;
 }
 </style>

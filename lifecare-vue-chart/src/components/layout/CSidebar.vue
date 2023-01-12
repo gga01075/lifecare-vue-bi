@@ -1,10 +1,12 @@
 <template>
-	<nav class="nav">
-		<ul class="menus">
-			<li><router-link to="/">Chart Home</router-link></li>
-			<li><router-link to="/chart-about">Chart About</router-link></li>
-		</ul>
-	</nav>
+	<aside class="sidebar">
+		<nav class="nav">
+			<ul class="menus">
+				<li><router-link to="/">Chart Home</router-link></li>
+				<li><router-link to="/chart-about">Chart About</router-link></li>
+			</ul>
+		</nav>
+	</aside>
 </template>
 
 <script>
@@ -14,16 +16,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nav {
+.sidebar {
 	max-width: 200px;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
+	flex-grow: 2;
+	height: calc(100% - 100px);
 	background: #242580;
 	color: #fff;
-	flex-grow: 2;
-	> .menus {
-		gap: 5px 0;
+	.nav {
+		> .menus {
+			display: flex;
+			flex-direction: column;
+			li {
+				gap: 5px 0;
+			}
+		}
 	}
 }
 </style>
