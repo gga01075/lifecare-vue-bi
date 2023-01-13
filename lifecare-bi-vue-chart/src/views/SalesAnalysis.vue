@@ -1,7 +1,7 @@
 <template>
 	<div>
 		매출 분석 대시보드입니다.
-		<CSelect />
+		<CSelect label="카테고리" multiple />
 		<CButton>버튼입니다</CButton>
 		<!-- <CDatePicker /> -->
 	</div>
