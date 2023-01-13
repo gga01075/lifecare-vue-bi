@@ -1,9 +1,9 @@
 <template>
-	<div>about</div>
+	<v-app>
+		<slot></slot>
+	</v-app>
 </template>
 
-<script>
-export default {};
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

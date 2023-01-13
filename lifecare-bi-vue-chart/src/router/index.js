@@ -1,36 +1,36 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
-    children: [
-      {
-        path: '/',
-        name: 'Chart-default',
-        component: () => import(/* webpackChunkName: "home" */ '@/views/Chart-default.vue'),
-      },
-      {
-        path: '/chart-home',
-        name: 'Chart-home',
-        component: () => import('@/views/Chart-home.vue'),
-      },
-      {
-        path: '/chart-about',
-        name: 'Chart-about',
-        component: () => import('@/views/Chart-about.vue'),
-      },
-    ],
-  },
-]
+	{
+		path: '/',
+		name: 'SalesAnalysis',
+		component: () => import('@/views/SalesAnalysis.vue'),
+	},
+	{
+		path: '/CustomerTypesAnalysis',
+		name: 'CustomerTypesAnalysis',
+		component: () => import('@/views/CustomerTypesAnalysis.vue'),
+	},
+	{
+		path: '/ProdSalesAnalysis',
+		name: 'ProdSalesAnalysis',
+		component: () => import('@/views/ProdSalesAnalysis.vue'),
+	},
+	{
+		path: '/CustomerManagement',
+		name: 'CustomerManagement',
+		component: () => import('@/views/CustomerManagement.vue'),
+	},
+	{
+		path: '/EventTypesAnalysis',
+		name: 'EventTypesAnalysis',
+		component: () => import('@/views/EventTypesAnalysis.vue'),
+	},
+];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
-})
+	history: createWebHistory(process.env.BASE_URL),
+	routes,
+});
 
-export default router
-
-
-
-
+export default router;
