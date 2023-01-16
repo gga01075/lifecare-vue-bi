@@ -23,10 +23,11 @@ export default defineConfig({
 	],
 	define: { 'process.env': {} },
 	resolve: {
-		alias: {
+		alias: [
 			// '@': fileURLToPath(new URL('./src', import.meta.url)),
-			'@': path.resolve(__dirname, './src'),
-		},
+			{ find: '@', replacement: path.resolve(__dirname, './src') },
+			{ find: '##', replacement: path.resolve(__dirname, './public') },
+		],
 		extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
 	},
 	server: {
