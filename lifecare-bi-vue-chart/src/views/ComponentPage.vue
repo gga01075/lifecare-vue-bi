@@ -3,7 +3,6 @@
 		<CSelect label="카테고리" multiple />
 		<CButton>버튼입니다</CButton>
 		<BarChart :chartId="barId1" :options="barOption1" :data="barData1" />
-		<LineChart :chartId="lineId1" :options="lineOption1" :data="lineData1" />
 	</div>
 </template>
 
@@ -12,7 +11,7 @@ import CSelect from '@/components/elements/CSelect.vue';
 import CButton from '@/components/elements/CButton.vue';
 // import CDatePicker from '@/components/elements/CDatePicker.vue';
 import BarChart from '@/components/elements/chart/BarChart.vue';
-import LineChart from '@/components/elements/chart/LineChart.vue';
+
 
 import { ref, reactive } from 'vue';
 
@@ -21,7 +20,6 @@ export default {
 		CSelect,
 		CButton,
 		BarChart,
-		LineChart
 	},
 	setup() {
 		// barchart 예시

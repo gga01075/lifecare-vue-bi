@@ -29,27 +29,27 @@ export default {
 		return {
 			items: [
 				{
-					title: '매출 분석 대시보드',
+					title: '매출분석',
 					icon: 'mdi-chart-areaspline',
 					path: '/',
 				},
 				{
-					title: '고객 유형(신규/재구매/이탈) 분석',
+					title: '고객분석',
 					icon: 'mdi-account-multiple',
 					path: '/CustomerTypesAnalysis',
 				},
 				{
-					title: '상품 판매 실적 분석',
+					title: '상품분석',
 					icon: 'mdi-gift',
 					path: '/ProdSalesAnalysis',
 				},
 				{
-					title: '(Logdata)고객관리 대시보드',
+					title: '마케팅분석',
 					icon: 'mdi-help-box',
 					path: '/CustomerManagement',
 				},
 				{
-					title: 'Event 성과 분석',
+					title: '고객관리',
 					icon: 'mdi-bullseye-arrow',
 					path: '/EventTypesAnalysis',
 				},
@@ -65,4 +65,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

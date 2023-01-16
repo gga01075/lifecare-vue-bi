@@ -1,5 +1,5 @@
 <template>
-	<div>매출 분석 대시보드입니다.</div>
+	<div class="f_l">매출 분석 대시보드입니다.</div>
 </template>
 
 <script>
