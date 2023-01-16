@@ -26,6 +26,11 @@ const routes = [
 		name: 'EventTypesAnalysis',
 		component: () => import('@/views/EventTypesAnalysis.vue'),
 	},
+	{
+		path: '/ComponentPage',
+		name: 'ComponentPage',
+		component: () => import('@/views/ComponentPage.vue'),
+	},
 ];
 
 const router = createRouter({

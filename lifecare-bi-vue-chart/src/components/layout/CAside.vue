@@ -53,6 +53,11 @@ export default {
 					icon: 'mdi-bullseye-arrow',
 					path: '/EventTypesAnalysis',
 				},
+				{
+					title: '컴포넌트 모음',
+					icon: 'mdi-bullseye-arrow',
+					path: '/ComponentPage',
+				},
 			],
 			right: null,
 		};

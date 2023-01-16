@@ -34,5 +34,6 @@ module.exports = {
 			},
 		],
 		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+		'disallowVue3BuiltInComponents': false,
 	},
 };
