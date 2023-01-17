@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<CSelect label="카테고리" multiple />
+		<CSelect :label="selectLabel1" multiple />
 		<CButton>버튼입니다</CButton>
 		<BarChart :chartId="barId1" :options="barOption1" :data="barData1" />
 	</div>
@@ -22,6 +22,10 @@ export default {
 		BarChart,
 	},
 	setup() {
+		// Select 예시
+		const selectLabel1 = ref('카테고리');
+		
+
 		// barchart 예시
 		const barId1 = ref('chart1');
 		const barOption1 = reactive({
@@ -50,10 +54,14 @@ export default {
 		});
 
 		return {
+			// select
+			selectLabel1,
+
+			// bar 차트
 			barId1,
 			barOption1,
 			barData1,
-
+			// line 차트
 			lineId1,
 			lineOption1,
 			lineData1

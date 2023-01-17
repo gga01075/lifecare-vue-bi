@@ -1,13 +1,27 @@
 <template>
-	<div class="f_l">매출 분석 대시보드입니다.</div>
+		<CContentTop>
+			<CSelect :selectedItem="nationList" multiple />
+		</CContentTop>
 </template>
 
 <script>
+import CContentTop from '@/components/layout/CContentTop.vue'
+import CSelect from '@/components/elements/CSelect.vue'
+
+
+
 export default {
-	data() {
-		return {};
+	components : {
+		CContentTop,
+		CSelect
 	},
-};
+	setup () {
+
+		return {}
+	}
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

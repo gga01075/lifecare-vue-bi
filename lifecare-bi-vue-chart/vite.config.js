@@ -16,9 +16,9 @@ export default defineConfig({
 		// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
 		vuetify({
 			autoImport: true,
-			styles: {
-				configFile: 'src/styles/settings.scss',
-			},
+			// styles: {
+			// 	configFile: 'src/styles/settings.scss',
+			// },
 		}),
 	],
 	define: { 'process.env': {} },
@@ -26,11 +26,17 @@ export default defineConfig({
 		alias: [
 			// '@': fileURLToPath(new URL('./src', import.meta.url)),
 			{ find: '@', replacement: path.resolve(__dirname, './src') },
-			{ find: '##', replacement: path.resolve(__dirname, './public') },
 		],
 		extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
 	},
 	server: {
 		port: 3000,
 	},
+	css: {
+		preprocessorOptions: {
+		  sass: {
+			additionalData: '@import "./src/scss/_common";'
+		  }
+		}
+	}
 });
